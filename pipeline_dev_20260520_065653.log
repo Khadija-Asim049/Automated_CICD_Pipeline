@@ -1,0 +1,4 @@
+[06:56:53] [INFO] Pipeline started for environment: dev
+[06:56:53] [INFO] Starting: Git Pull
+[06:56:53] [ERROR] Git Pull failed (exit code: 1)
+[06:56:53] [ERROR] Pipeline halted at: stage_pull

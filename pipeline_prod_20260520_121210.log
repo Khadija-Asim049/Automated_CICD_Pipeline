@@ -1,0 +1,11 @@
+[12:12:10] [INFO] Pipeline started for environment: prod
+[12:12:10] [INFO] Git Pull skipped (no remote configured)
+[12:12:11] [INFO] Backup created at /tmp/backup_prod_1779261130
+[12:12:11] [INFO] Starting: Build
+[12:12:11] [OK] Build passed
+[12:12:11] [INFO] Starting: Tests
+[12:12:11] [OK] Tests passed
+[12:12:11] [INFO] Starting: Deploy
+[12:12:11] [OK] Deploy passed
+[12:12:11] [OK] Pipeline completed successfully for environment: prod
+[12:12:13] [INFO] Webhook notification sent: SUCCESS
