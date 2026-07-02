@@ -1,0 +1,10 @@
+[19:56:57] [INFO] Pipeline started for environment: dev
+[19:56:57] [INFO] Starting: Git Pull
+[19:57:13] [ERROR] Git Pull failed (exit code: 1)
+[19:57:13] [ERROR] Pipeline halted at: stage_pull
+[19:57:13] [WARN] Initiating rollback for environment: dev
+[19:57:13] [WARN] No backup found. Rollback skipped.
+[19:57:15] [INFO] Webhook notification sent: FAILED at stage_pull
+[19:57:15] [ERROR] Pipeline exited unexpectedly
+[19:57:15] [WARN] Initiating rollback for environment: dev
+[19:57:15] [WARN] No backup found. Rollback skipped.
