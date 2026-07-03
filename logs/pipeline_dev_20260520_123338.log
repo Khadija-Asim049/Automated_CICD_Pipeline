@@ -1,0 +1,11 @@
+[12:33:38] [INFO] Pipeline started for environment: dev
+[12:33:38] [INFO] Git Pull skipped (no remote configured)
+[12:33:38] [INFO] Backup created at /home/jay/Desktop/OS-LabFinal/backup_dev_1779262418
+[12:33:38] [INFO] Starting: Build
+[12:33:38] [OK] Build passed
+[12:33:38] [INFO] Starting: Tests
+[12:33:38] [OK] Tests passed
+[12:33:38] [INFO] Starting: Deploy
+[12:33:38] [OK] Deploy passed
+[12:33:38] [OK] Pipeline completed successfully for environment: dev
+[12:33:41] [INFO] Webhook notification sent: SUCCESS

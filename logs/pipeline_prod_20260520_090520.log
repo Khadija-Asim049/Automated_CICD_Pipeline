@@ -1,0 +1,12 @@
+[09:05:20] [INFO] Pipeline started for environment: prod
+[09:05:20] [INFO] Git Pull skipped (no remote configured)
+[09:05:20] [INFO] Backup created at /tmp/backup_prod_1779249920
+[09:05:20] [INFO] Starting: Build
+[09:05:20] [ERROR] Build failed (exit code: 1)
+[09:05:20] [ERROR] Pipeline halted at: stage_build
+[09:05:20] [WARN] Initiating rollback for environment: prod
+[09:05:20] [OK] Rollback complete. Restored from /tmp/backup_prod_1779249920
+[09:05:20] [INFO] Webhook notification sent: FAILED at stage_build
+[09:05:20] [ERROR] Pipeline exited unexpectedly
+[09:05:20] [WARN] Initiating rollback for environment: prod
+[09:05:20] [OK] Rollback complete. Restored from /tmp/backup_prod_1779249920
