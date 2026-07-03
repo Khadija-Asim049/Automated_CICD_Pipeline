@@ -28,7 +28,9 @@ on_exit() {
     rm -rf "$BACKUP_DIR"
 }
 
-LOG_FILE="./pipeline_${ENV}_$(date +%Y%m%d_%H%M%S).log"
+LOG_DIR="./logs"
+mkdir -p "$LOG_DIR"
+LOG_FILE="${LOG_DIR}/pipeline_${ENV}_$(date +%Y%m%d_%H%M%S).log"
 
 log() {
     local level=$1
@@ -53,14 +55,14 @@ run_step() {
 stage_pull() {
     if git remote | grep -q .; then
         git stash
-        run_step "Git Pull" git pull
+        run_step "Git Pull" git pull origin "${GIT_BRANCH:-main}"
     else
         log "INFO" "Git Pull skipped (no remote configured)"
     fi
 }
 
 stage_backup() {
-    BACKUP_DIR="/home/jay/Desktop/OS-LabFinal/backup_${ENV}_$(date +%s)"
+    BACKUP_DIR="/home/jay/Dcocuments/OS-LabFinal/backup_${ENV}_$(date +%s)"
     mkdir -p "$BACKUP_DIR"
     cp -r "$DEPLOY_DIR/." "$BACKUP_DIR/" 2>/dev/null
     log "INFO" "Backup created at $BACKUP_DIR"
