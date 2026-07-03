@@ -1,0 +1,13 @@
+[21:51:20] [INFO] Pipeline started for environment: staging
+[21:51:20] [INFO] Starting: Git Pull
+[21:51:30] [OK] Git Pull passed
+[21:51:30] [INFO] Backup created at /home/jay/Dcocuments/OS-LabFinal/backup_staging_1783097490
+[21:51:30] [INFO] Starting: Build
+[21:51:32] [ERROR] Build failed (exit code: 1)
+[21:51:32] [ERROR] Pipeline halted at: stage_build
+[21:51:32] [WARN] Initiating rollback for environment: staging
+[21:51:32] [OK] Rollback complete. Restored from /home/jay/Dcocuments/OS-LabFinal/backup_staging_1783097490
+[21:51:33] [INFO] Webhook notification sent: FAILED at stage_build
+[21:51:33] [ERROR] Pipeline exited unexpectedly
+[21:51:33] [WARN] Initiating rollback for environment: staging
+[21:51:33] [OK] Rollback complete. Restored from /home/jay/Dcocuments/OS-LabFinal/backup_staging_1783097490

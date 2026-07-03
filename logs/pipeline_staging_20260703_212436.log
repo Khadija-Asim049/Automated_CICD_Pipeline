@@ -1,0 +1,12 @@
+[21:24:36] [INFO] Pipeline started for environment: staging
+[21:24:36] [INFO] Starting: Git Pull
+[21:24:41] [OK] Git Pull passed
+[21:24:41] [INFO] Backup created at /home/jay/Dcocuments/OS-LabFinal/backup_staging_1783095881
+[21:24:41] [INFO] Starting: Build
+[21:24:42] [OK] Build passed
+[21:24:42] [INFO] Starting: Tests
+[21:24:42] [OK] Tests passed
+[21:24:42] [INFO] Starting: Deploy
+[21:24:42] [OK] Deploy passed
+[21:24:42] [OK] Pipeline completed successfully for environment: staging
+[21:24:42] [INFO] Webhook notification sent: SUCCESS

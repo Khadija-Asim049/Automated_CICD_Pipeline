@@ -1,0 +1,10 @@
+[21:26:23] [INFO] Pipeline started for environment: staging
+[21:26:23] [INFO] Starting: Git Pull
+[21:26:28] [ERROR] Git Pull failed (exit code: 128)
+[21:26:28] [ERROR] Pipeline halted at: stage_pull
+[21:26:28] [WARN] Initiating rollback for environment: staging
+[21:26:29] [WARN] No backup found. Rollback skipped.
+[21:26:29] [INFO] Webhook notification sent: FAILED at stage_pull
+[21:26:29] [ERROR] Pipeline exited unexpectedly
+[21:26:29] [WARN] Initiating rollback for environment: staging
+[21:26:29] [WARN] No backup found. Rollback skipped.

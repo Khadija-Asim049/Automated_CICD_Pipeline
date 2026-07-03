@@ -1,0 +1,12 @@
+[21:23:37] [INFO] Pipeline started for environment: dev
+[21:23:37] [INFO] Starting: Git Pull
+[21:23:41] [OK] Git Pull passed
+[21:23:41] [INFO] Backup created at /home/jay/Dcocuments/OS-LabFinal/backup_dev_1783095821
+[21:23:41] [INFO] Starting: Build
+[21:23:42] [OK] Build passed
+[21:23:42] [INFO] Starting: Tests
+[21:23:42] [OK] Tests passed
+[21:23:42] [INFO] Starting: Deploy
+[21:23:42] [OK] Deploy passed
+[21:23:42] [OK] Pipeline completed successfully for environment: dev
+[21:23:43] [INFO] Webhook notification sent: SUCCESS
