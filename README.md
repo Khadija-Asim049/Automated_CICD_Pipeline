@@ -32,14 +32,14 @@ The goal of this project was to understand how modern CI/CD tools like Jenkins a
 
 ## Features
 
-✅ Automated Git integration  
-✅ Build automation using g++  
-✅ Automated testing using shell scripts  
-✅ Separate deployment environments  
-✅ Rollback on build/test/deploy failure  
-✅ Timestamped logs  
-✅ Webhook notifications using curl  
-✅ Modular pipeline architecture  
+ Automated Git integration  
+ Build automation using g++  
+ Automated testing using shell scripts  
+ Separate deployment environments  
+ Rollback on build/test/deploy failure  
+ Timestamped logs  
+ Webhook notifications using curl  
+ Modular pipeline architecture  
 
 ---
 
@@ -128,23 +128,6 @@ The pipeline can build and test any of these automatically.
 
 ---
 
-## Setup
-
-Clone repository:
-
-```bash
-git clone <your-repo-url>
-cd Automated_CICD_Pipeline
-```
-
-Make script executable:
-
-```bash
-chmod +x pipeline.sh
-```
-
----
-
 ## Usage
 
 Run pipeline:
@@ -157,27 +140,6 @@ Example:
 
 ```bash
 ./pipeline.sh dev calculator
-```
-
-More examples:
-
-```bash
-./pipeline.sh staging fibonacci
-./pipeline.sh prod palindrome
-./pipeline.sh dev evenodd
-```
-
----
-
-## Example Successful Run
-
-```text
-[INFO] Starting pipeline...
-[INFO] Pull successful
-[INFO] Backup created
-[INFO] Build successful
-[INFO] Tests passed
-[SUCCESS] Deployment completed
 ```
 
 ---
@@ -198,73 +160,14 @@ The pipeline automatically:
 3. Logs the failure  
 4. Sends failure notification  
 
-Example:
-
-```text
-[ERROR] Tests failed
-[WARN] Rollback triggered
-[INFO] Previous deployment restored
-```
-
 ---
 
 ## Logging
 
-Each pipeline run generates timestamped logs.
-
-Example:
-
-```text
-[2026-07-03 18:45:02] INFO: Build started
-[2026-07-03 18:45:05] INFO: Tests passed
-[2026-07-03 18:45:07] SUCCESS: Deployment complete
-```
-
-Logs help with:
+Each pipeline run generates timestamped logs which helps with:
 - Debugging
 - Monitoring
 - Deployment history
-
----
-
-## Operating System Concepts Applied
-
-This project demonstrates several OS concepts:
-
-### Process Management
-External commands spawn child processes:
-- git
-- g++
-- cp
-- curl
-
-### Exit Codes
-Commands return:
-- `0` → success
-- non-zero → failure
-
-Pipeline decisions depend on these codes.
-
-### File System Operations
-Used heavily for:
-- backups
-- deployment
-- cleanup
-- logging
-
-Commands used:
-- `mkdir`
-- `cp`
-- `rm`
-
-### Signal Handling
-The pipeline uses Bash `trap` for cleanup and recovery.
-
-Example:
-
-```bash
-trap on_exit EXIT
-```
 
 ---
 
@@ -302,18 +205,14 @@ Possible enhancements:
 
 ## Demo
 
-Add screenshots or terminal recordings here:
-
 - Successful deployment
+file:///home/jay/Pictures/Screenshots/Screenshot%20from%202026-07-03%2021-22-51.png
+
 - Failed build with rollback
+file:///home/jay/Pictures/Screenshots/Screenshot%20from%202026-07-03%2021-57-36.png
+
 - Webhook notifications
-
-Example:
-
-```md
-![Success](assets/success.png)
-![Rollback](assets/failure.png)
-```
+file:///home/jay/Pictures/Screenshots/Screenshot%20from%202026-07-03%2021-23-21.png
 
 ---
 
